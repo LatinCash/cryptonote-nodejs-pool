@@ -65,7 +65,7 @@
                 "port": 9999,
                 "difficulty": 20000,
                 "desc": "SSL connection",
-                "ssl": true
+                "ssl": false
             }
         ],
         "varDiff": {
@@ -132,11 +132,11 @@
         "enabled": true,
         "hashrateWindow": 600,
         "updateInterval": 5,
-        "bindIp": "127.0.0.1",
+        "bindIp": "0.0.0.0",
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "engenheiro",
+        "password": "api_password",
         "ssl": false,
         "sslPort": 8119,
         "sslCert": "./cert.pem",
@@ -152,7 +152,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 8085
+        "port": 20636
     },
 
     "redis": {
@@ -198,7 +198,7 @@
 
     "email": {
         "enabled": false,
-        "fromAddress": "ricardo.marlus@gmail.com",
+        "fromAddress": "email@pool.com",
         "transport": "sendmail",
         "sendmail": {
             "path": "/usr/sbin/sendmail"
