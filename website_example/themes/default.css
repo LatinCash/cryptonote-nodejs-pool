@@ -142,7 +142,7 @@ footer > div{
   z-index: 1000;
 }
 .nav-side-menu .brand {
-  background-color: #014e71;
+  background-color: #ffd800;
   line-height: 50px;
   display: block;
   text-align: center;
@@ -282,7 +282,7 @@ footer > div{
 
 /* Top Bar */
 #top-bar { 
-  background-color: #0274a8;
+  background-color: #313131;
   line-height: 50px;
   display: block;
   font-size: 17px;
