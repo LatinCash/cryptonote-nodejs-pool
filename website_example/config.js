@@ -1,4 +1,4 @@
-var api = "http://45.63.16.80:8117";
+var api = "http://pool.latincashcoin.com:8117";
 
 var email = "email@pool.com";
 var telegram = "https://t.me/YourPool";
