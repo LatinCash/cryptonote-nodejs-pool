@@ -152,7 +152,8 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 20636
+        "port": 20636,
+        "password": "rpc_wallet_password"
     },
 
     "redis": {
