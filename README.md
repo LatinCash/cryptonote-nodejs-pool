@@ -182,7 +182,7 @@ Explanation for each field:
 "coinDifficultyTarget": 120,
 
 /* Set daemon type. Supported values: default, forknote (Fix block height + 1), bytecoin (ByteCoin Wallet RPC API) */
-"deamonType": "default",
+"deamonType": "bytecoin",
 
 /* Set Cryptonight algorithm settings.
    Supported algorithms: cryptonight (default). cryptonight_light and cryptonight_heavy
@@ -336,13 +336,13 @@ Explanation for each field:
     "maxAddresses": 50, // Split up payments if sending to more than this many addresses
     "mixin": 5, // Number of transactions yours is indistinguishable from
     "priority": 0, // The transaction priority    
-    "transferFee": 4000000000, // Fee to pay for each transaction
-    "dynamicTransferFee": true, // Enable dynamic transfer fee (fee is multiplied by number of miners)
+    "transferFee": 10, // Fee to pay for each transaction
+    "dynamicTransferFee": false, // Enable dynamic transfer fee (fee is multiplied by number of miners)
     "minerPayFee" : true, // Miner pays the transfer fee instead of pool owner when using dynamic transfer fee
-    "minPayment": 100000000000, // Miner balance required before sending payment
+    "minPayment": 10000, // Miner balance required before sending payment
     "maxPayment": null, // Maximum miner balance allowed in miner settings
-    "maxTransactionAmount": 0, // Split transactions by this amount (to prevent "too big transaction" error)
-    "denomination": 10000000000 // Truncate to this precision and store remainder
+    "maxTransactionAmount": 10000000, // Split transactions by this amount (to prevent "too big transaction" error)
+    "denomination": 10 // Truncate to this precision and store remainder
 },
 
 /* Module that monitors the submitted block maturities and manages rounds. Confirmed
@@ -391,7 +391,8 @@ Explanation for each field:
 /* Wallet daemon connection details (default port is 18980) */
 "wallet": {
     "host": "127.0.0.1",
-    "port": 20636
+    "port": 8070,
+    "password": "wallet_rpc_password"
 },
 
 /* Redis connection info (default port is 6379) */
