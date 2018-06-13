@@ -7,7 +7,7 @@
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
 
-    "daemonType": "default",
+    "daemonType": "bytecoin",
     "cnAlgorithm": "cryptonight_light",
     "cnVariant": 1,
     "cnBlobType": 2,
@@ -152,7 +152,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 20636,
+        "port": 8070,
         "password": "rpc_wallet_password"
     },
 
