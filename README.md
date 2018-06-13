@@ -4,8 +4,9 @@
 * To use with walletd and rpc_password (safer), set daemontype to "bytecoin"
 
 * Example
-` ./walletd -w walletcontainerfile -p passwordforcontainer --bind-port=20636 --rpc-password=wallet_rpc_password`
-
+``
+./walletd -w walletcontainerfile -p passwordforcontainer --bind-port=20636 --rpc-password=wallet_rpc_password
+``
 
 cryptonote-nodejs-pool
 ======================
