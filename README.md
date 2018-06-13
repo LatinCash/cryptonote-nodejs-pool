@@ -2,6 +2,8 @@
 
 ``
 To use the pool with poolwallet or simplewallet, set daemontype to "default"
+``
+``
 To use with walletd and rpc_password (more safe), use "bytecoin"
 ``
 
