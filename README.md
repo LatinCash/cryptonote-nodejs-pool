@@ -1,3 +1,9 @@
+#### Usage info
+
+To use the pool with poolwallet or simplewallet, set daemontype to "default"
+To use with walletd and rpc_password (more safe), use "bytecoin" as daemontype
+
+
 cryptonote-nodejs-pool
 ======================
 
@@ -182,7 +188,7 @@ Explanation for each field:
 "coinDifficultyTarget": 120,
 
 /* Set daemon type. Supported values: default, forknote (Fix block height + 1), bytecoin (ByteCoin Wallet RPC API) */
-"deamonType": "bytecoin",
+"daemonType": "bytecoin",
 
 /* Set Cryptonight algorithm settings.
    Supported algorithms: cryptonight (default). cryptonight_light and cryptonight_heavy
