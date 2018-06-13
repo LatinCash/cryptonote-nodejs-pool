@@ -3,8 +3,6 @@
 * To use the pool with poolwallet or simplewallet, set daemontype to "default"
 * To use with walletd and rpc_password (safer), set daemontype to "bytecoin"
 
-* Example
-
 ````bash
 ./walletd -w walletcontainerfile -p passwordforcontainer --bind-port=20636 --rpc-password=wallet_rpc_password
 ````
