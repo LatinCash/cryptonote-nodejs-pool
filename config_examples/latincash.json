@@ -7,7 +7,7 @@
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
 
-    "daemonType": "bytecoin", //use "default" for poolwallet/simplewallet and "bytecoin" for walletd
+    "daemonType": "bytecoin", // use "default" for poolwallet/simplewallet and "bytecoin" for walletd
     "cnAlgorithm": "cryptonight-lite",
     "cnVariant": 1,
     "cnBlobType": 2,
