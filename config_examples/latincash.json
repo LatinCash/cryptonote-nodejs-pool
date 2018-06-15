@@ -1,5 +1,5 @@
 {
-    "poolHost": "latincashpool.ddns.net",
+    "poolHost": "poolhost",
 
     "coin": "LatinCash",
     "symbol": "LCH",
@@ -7,7 +7,7 @@
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
 
-    "daemonType": "default",
+    "daemonType": "bytecoin", //use "default" for poolwallet/simplewallet and "bytecoin" for walletd
     "cnAlgorithm": "cryptonight-lite",
     "cnVariant": 1,
     "cnBlobType": 2,
@@ -27,7 +27,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "cashVHzJ8EXEdWbPQmqi77RuB61enht1XDY1JERZ3k9kWdT2pX26PfEVNuLTavjuUMMMpkJxSBoTWPQ7YZCzDkvV5s8ALhbjNL",
+        "poolAddress": "pool_wallet_address",
         "intAddressPrefix": "",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
@@ -53,7 +53,7 @@
             {
                 "port": 7777,
                 "difficulty": 500000,
-                "desc": "Cloud-mining / NiceHash"
+                "desc": "Big Farms"
             },
             {
                 "port": 8888,
@@ -113,9 +113,9 @@
         "transferFee": 10,
         "dynamicTransferFee": false,
         "minerPayFee" : true,
-        "minPayment": 20000,
+        "minPayment": 10000,
         "maxPayment": 10000000,
-        "maxTransactionAmount": 0,
+        "maxTransactionAmount": 10000000,
         "denomination": 100
     },
 
@@ -124,7 +124,7 @@
         "interval": 30,
         "depth": 10,
         "poolFee": 0.5,
-        "devDonation": 0.0,
+        "devDonation": 0.1,
         "networkFee": 0.0
     },
 
@@ -152,7 +152,8 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 20636
+        "port": 8070,
+        "password": "rpc_wallet_password"
     },
 
     "redis": {
