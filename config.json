@@ -60,12 +60,6 @@
                 "difficulty": 100000,
                 "desc": "Hidden port",
                 "hidden": true
-            },
-            {
-                "port": 8888,
-                "difficulty": 20000,
-                "desc": "SSL connection",
-                "ssl": false
             }
         ],
         "varDiff": {
@@ -146,12 +140,12 @@
     },
 
     "daemon": {
-        "host": "api.latincashcoin.com",
+        "host": "127.0.0.1",
         "port": 20635
     },
 
     "wallet": {
-        "host": "api.latincashcoin.com",
+        "host": "127.0.0.1",
         "port": 20636,
         "password": "rpc_wallet_password"
     },
