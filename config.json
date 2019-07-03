@@ -27,7 +27,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "cashVHzJ8EXEdWbPQmqi77RuB61enht1XDY1JERZ3k9kWdT2pX26PfEVNuLTavjuUMMMpkJxSBoTWPQ7YZCzDkvV5s8ALhbjNL",
+        "poolAddress": "cashLsR4pZtZ8V9nAuhnj9DwjrP4W7MTAiiapDatFRr4fGBT1pWNx247GpW1v1SWMG8t7RVhgGSrT91hpX57pp8MA2Xes9p4Jj",
         "intAddressPrefix": "",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
@@ -51,18 +51,18 @@
                 "desc": "High end hardware"
             },
             {
-                "port": 7777,
+                "port": 6666,
                 "difficulty": 500000,
                 "desc": "Cloud-mining / NiceHash"
             },
             {
-                "port": 8888,
+                "port": 7777,
                 "difficulty": 100000,
                 "desc": "Hidden port",
                 "hidden": true
             },
             {
-                "port": 9999,
+                "port": 8888,
                 "difficulty": 20000,
                 "desc": "SSL connection",
                 "ssl": false
@@ -106,7 +106,7 @@
 
     "payments": {
         "enabled": true,
-        "interval": 300,
+        "interval": 1800,
         "maxAddresses": 50,
         "mixin": 0,
         "priority": 0,
@@ -122,8 +122,8 @@
     "blockUnlocker": {
         "enabled": true,
         "interval": 30,
-        "depth": 10,
-        "poolFee": 0.5,
+        "depth": 15,
+        "poolFee": 1.0,
         "devDonation": 0.0,
         "networkFee": 0.0
     },
@@ -146,13 +146,13 @@
     },
 
     "daemon": {
-        "host": "127.0.0.1",
+        "host": "api.latincashcoin.com",
         "port": 20635
     },
 
     "wallet": {
-        "host": "127.0.0.1",
-        "port": 8070,
+        "host": "api.latincashcoin.com",
+        "port": 20636,
         "password": "rpc_wallet_password"
     },
 
