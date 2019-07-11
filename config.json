@@ -1,5 +1,5 @@
 {
-    "poolHost": "pool.latincashcoin.com",
+    "poolHost": "pool.poolhost.com",
 
     "coin": "LatinCash",
     "symbol": "LCH",
@@ -27,7 +27,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "cashLsR4pZtZ8V9nAuhnj9DwjrP4W7MTAiiapDatFRr4fGBT1pWNx247GpW1v1SWMG8t7RVhgGSrT91hpX57pp8MA2Xes9p4Jj",
+        "poolAddress": "pool wallet address",
         "intAddressPrefix": "",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
@@ -37,13 +37,8 @@
         "ports": [
             {
                 "port": 3333,
-                "difficulty": 10000,
-                "desc": "Low end hardware"
-            },
-            {
-                "port": 4444,
                 "difficulty": 20000,
-                "desc": "Mid range hardware"
+                "desc": "Low/middle end hardware"
             },
             {
                 "port": 5555,
@@ -51,19 +46,13 @@
                 "desc": "High end hardware"
             },
             {
-                "port": 6666,
-                "difficulty": 500000,
-                "desc": "Cloud-mining / NiceHash"
-            },
-            {
                 "port": 7777,
                 "difficulty": 100000,
-                "desc": "Hidden port",
-                "hidden": true
+                "desc": "Big Farms",
             }
         ],
         "varDiff": {
-            "minDiff": 10000,
+            "minDiff": 20000,
             "maxDiff": 2000000,
             "targetTime": 60,
             "retargetTime": 30,
@@ -109,8 +98,8 @@
         "minerPayFee" : true,
         "minPayment": 20000,
         "maxPayment": 10000000,
-        "maxTransactionAmount": 0,
-        "denomination": 100
+        "maxTransactionAmount": 10000000,
+        "denomination": 1000
     },
 
     "blockUnlocker": {
